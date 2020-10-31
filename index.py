@@ -16,7 +16,7 @@ def get_koders():{
 @app.route('/koders', methods=['POST'])
 def create_koder():
     data = request.json
-    koders.append({'name'; data['name']})
+    koders.append({'name': data['name']})
     return {
         'message': 'koder created',
         'koders': koders

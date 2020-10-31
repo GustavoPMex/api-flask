@@ -2,8 +2,8 @@
     "version": 2,
     "builds": [
         {
-            "use": "@vercel/python",
-            "src": "./index.py"
+            "src": "./index.py",
+            "use": "@vercel/python"
         }
     ],
     "routes": [
