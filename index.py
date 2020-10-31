@@ -13,7 +13,8 @@ def hola_mundo():
     }
 
 @app.route('/koders')
-def get_koders():{
+def get_koders():
+    return {
     'koders': koders
 }
 
@@ -28,14 +29,13 @@ def create_koder():
 
 @app.route('/koders/<name>', methods=['DELETE'])
 def delete_koder(name):
-    if {'name': name} in koders
+    if {'name': name} in koders:
         koders.remove({'name':name})
     else:
         return make_response{
             {'message': f'{name} does not exists'},
             404
         }
-
     return {
         'message': 'koder deleted',
         'koders': koders
