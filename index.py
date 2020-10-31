@@ -2,6 +2,10 @@ from flask import Flask, request, make_response
 
 app = Flask(__name__)
 
+koders = {
+    {'name': 'gus'},
+}
+
 @app.route('/')
 def hola_mundo():
     return {
