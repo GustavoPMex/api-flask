@@ -36,7 +36,8 @@ def delete_koder(name):
             {'message': f'{name} does not exists'},
             404
         }
+
     return {
         'message': 'koder deleted',
-        'koders': koders
+        'koders': koders,
     }
