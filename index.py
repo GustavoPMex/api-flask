@@ -32,10 +32,10 @@ def delete_koder(name):
     if {'name': name} in koders:
         koders.remove({'name':name})
     else:
-        return make_response{
+        return make_response(
             {'message': f'{name} does not exists'},
             404
-        }
+        )
 
     return {
         'message': 'koder deleted',
