@@ -8,7 +8,9 @@ koders = [
 
 @app.route('/')
 def hola_mundo():
-    return koders
+    return {
+        'message': 'Hola mundo'
+    }
 
 @app.route('/koders')
 def get_koders():
